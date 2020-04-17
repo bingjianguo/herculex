@@ -21,8 +21,7 @@ Herculex 在小程序研发场景做了更深度的内化，目前将各种场�
 - **性能与轻量**：在小程序体系下一般基本响应式已存在，herculex 更关注的是托管 setData 的使用，于是只是对setData 部分做了精心的优化。并且使用immer和immutable两种方式保证mutation的高可用。
 - **helpers**：为了更贴合业务最佳实践在 state 和 mutation 实例中内置 immutable helper
 - **auto connect**：小程序体系下，view 层与 Page Controller是严格分离的，计算属性基本就都推荐在 getters 里完成，于是对 getters 的实现依赖state，默认集成进整个应用栈，页面上直接使用。
-- **global store**：herculex 允许中心store管理方式，那么就像dva一样每个页面是一个命名空间，我们回在近期提供 redux-devtools 的拓展，给开发者更漂亮的devtools。
-- **持续维护**：herculex 是行业前端组业务的命脉，所有小程序业务皆基于它，我们必须保障他的稳定性，且不断优化它
+- **global store**：herculex 允许中心store管理方式，那么就像dva一样每个页面是一个命名空间。
 - **强大的mutation**：运行时自动识别使用 immer 还是实例中的 immutable helper 保障数据的不可变性，并且支持一部分的反模式和内置 mutation 极大提升研发效率。
 - **跨平台**：目前已支持 **淘宝小程序、微信小程序**。
 - **谁在用我们？**：
